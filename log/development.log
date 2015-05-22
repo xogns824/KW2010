@@ -1,0 +1,27 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-22 00:13:41 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cwh/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 51ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-22 00:16:07 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cwh/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 57ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-22 00:16:11 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cwh/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-22 00:16:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1861ms (Views: 1845.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2015-05-22 00:16:44 -0700
