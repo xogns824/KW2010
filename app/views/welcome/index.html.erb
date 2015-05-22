@@ -1,19 +1,50 @@
 <!doctype html>
 <html lang="ko">
   <head>
+ <style type="text/css">
+   nav ul{padding-top:10px;}
+   nav ul li {
+   display:inline;
+   border-left:1px solid #999;
+   padding:0 10px;
+   }
+   nav ul li:first-child{border-left:none;}
+   </style>
     <meta charset="utf-8">
     <title>CSS Tutorial | Layout</title>
     <style>
+#info {
+   text-align: right;
+
+   }
+
+#Al{
+   text-align: center;
+}
       #jb-container {
-        width: 940px;
+        width: 1000px;
         margin: 0px auto;
         padding: 20px;
-        border: 1px solid #bcbcbc;
+      }
+      #jb-logo {
+        padding: 20px;
+        width: 320px;
+	height: 100px;
+        margin-bottom: 20px;
+        float: left;
       }
       #jb-header {
+	height: 100px;
+        width: 600px;
         padding: 20px;
         margin-bottom: 20px;
-        border: 1px solid #bcbcbc;
+        float: left;
+
+      }
+      #jb-category {
+        padding: 20px;
+        margin-bottom: 20px;
+
       }
       #jb-sidebar-left {
         width: 160px;
@@ -21,40 +52,72 @@
         margin-right: 20px;
         margin-bottom: 20px;
         float: left;
-        border: 1px solid #bcbcbc;
+
       }
       #jb-content {
         width: 450px;
         padding: 20px;
         margin-bottom: 20px;
         float: left;
-        border: 1px solid #bcbcbc;
+
       }
       #jb-sidebar-right {
         width: 160px;
         padding: 20px;
         margin-bottom: 20px;
         float: right;
-        border: 1px solid #bcbcbc;
+
       }
       #jb-footer {
         clear: both;
         padding: 20px;
-        border: 1px solid #bcbcbc;
+
       }
     </style>
   </head>
+  <title>bottle Shop</title>
   <body>
     <div id="jb-container">
-      <div id="jb-header">
-        <h1>3-Column Layout</h1>
+      <div id="jb-logo">
+        <a href="http://localhost:3000">
+    <img src="http://postfiles11.naver.net/20150518_218/knnk6807_1431956450490ATkKf_JPEG/pic1.jpg?type=w3" style="width: 300px;"></a>
       </div>
+      <div id="jb-header">
+  <nav class="navbar navbar-default navbar-top" role="navigation">
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul id="info" style="padding:0" class="nav navbar-nav">
+     <li class="menu-item"><a href="#">Login</a></li>
+	 <li class="menu-item"><a href="join.html.erb">회원가입</a></li>
+     <li class="menu-item"><a href="#">고객센터</a></li>
+	 <li class="menu-item"><a href="#">mypage</a></li>
+	<ul>
+  </nav>
+	<form action="http://localhost:3000" method="GET">
+     <input type="text"style="width: 400px;">
+     <input type="submit" value="검색">
+    </form>
+      </div>
+      <div id="jb-category">
+<nav class="navbar navbar-default navbar-top" role="navigation">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul id="Al" style="padding:0" class="nav navbar-nav">
+      <li class="menu-item"><a href="#">Wine</a></li>
+	  <li class="menu-item"><a href="#">Whisky</a></li>
+      <li class="menu-item"><a href="#">Vodka</a></li>
+	  <li class="menu-item"><a href="#">Brandy/Cognac</a></li>
+	  <li class="menu-item"><a href="#">전통주</a></li>
+	 </ul>
+	</div>
+   </nav>
       <div id="jb-sidebar-left">
-        <h2>Sidebar</h2>
+        <h2>카테고리</h2>
         <ul>
-          <li>Lorem</li>
-          <li>Ipsum</li>
-          <li>Dolor</li>
+	  <li class="menu-item"><a href="#">와인</a></li>
+	  <li class="menu-item"><a href="#">위스키</a></li>
+	  <li class="menu-item"><a href="#">보드카</a></li>
+	  <li class="menu-item"><a href="#">브랜디/꼬냑</a></li>
+	  <li class="menu-item"><a href="#">맥주</a></li>
+	  <li class="menu-item"><a href="#">전통주</a></li>
         </ul>
       </div>
       <div id="jb-content">
@@ -75,4 +138,4 @@
       </div>
     </div>
   </body>
-</html>in app/views/welcome/index.html.erb</p>
+</html>
